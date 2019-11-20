@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype_1_ACsim", "Prototype_1_ACsim\Prototype_1_ACsim.csproj", "{35299A33-BC15-46F5-B9BE-4A5CA9CB45F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35299A33-BC15-46F5-B9BE-4A5CA9CB45F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35299A33-BC15-46F5-B9BE-4A5CA9CB45F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35299A33-BC15-46F5-B9BE-4A5CA9CB45F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35299A33-BC15-46F5-B9BE-4A5CA9CB45F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E972CC9-EE50-47D2-851C-23C099B04FC9}
+	EndGlobalSection
+EndGlobal
