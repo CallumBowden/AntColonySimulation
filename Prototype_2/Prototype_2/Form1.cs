@@ -1195,7 +1195,7 @@ namespace Prototype_2
             for (int i = 0; i < list_food.Count; i++)
             {
                 EraseFood(i);
-                list_food.ElementAt(i).Quantity = 0;
+                // list_food.ElementAt(i).Quantity = 0;
                 list_food.RemoveAt(i);
                 foodSources = 0;
                 foodVolume = 0;
