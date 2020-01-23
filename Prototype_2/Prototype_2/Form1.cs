@@ -63,9 +63,9 @@ namespace Prototype_2
                 MessageBox.Show("Number of ants is too low");
                 return;
             }
-            if (ant_UDV > 1000)
+            if (ant_UDV > 800)
             {
-                MessageBox.Show("Number of ants is too high"); // later prototype version might use threading to avoid this
+                MessageBox.Show("Number of ants is too high"); 
                 return;
             }
             for (int i = 0; i < ant_UDV; i++)
