@@ -428,12 +428,10 @@ namespace Prototype_2
             foodVolume = Convert.ToInt32(txt_FoodLeft.Text);
             foodVolume = foodVolume - 1;
             txt_FoodLeft.Text = foodVolume.ToString();
-
             foodClosest = list_ants.ElementAt(antID).foodClosest;
             list_ants.ElementAt(antID).foodSourceID = foodClosest;
             list_food.ElementAt(foodClosest).Quantity--;
             list_ants.ElementAt(antID).isCarrying = true; // changes colour of ant
-            // list_ants.ElementAt(antID).foodLocationKnown = true; //  <-- temporary whilst ACO missing
             Console.WriteLine("food picked up");
             if (list_food.ElementAt(foodClosest).Quantity == 0) // reduce food sources left value and clear food from panel
             {
@@ -446,7 +444,6 @@ namespace Prototype_2
         private void DepositFood(int antID)
         { // deposits food an adds to stockpile
             list_ants.ElementAt(antID).isCarrying = false; // isCarrying set to false so colour of ant goes back to default
-            // list_ants.ElementAt(antID).nestLocationKnown = true; //  <-- temporary whilst ACO missing
             stockpile = stockpile + 1;
             txt_NestFood.Text = stockpile.ToString();
             Console.WriteLine("deposited");
@@ -469,7 +466,6 @@ namespace Prototype_2
                 int min = Convert.ToInt32(txt_MinFoodPerSource.Text);
                 int max = Convert.ToInt32(txt_MaxFoodPerSource.Text);
                 Food tempFood;
-
                 tempFood = new Food(clickPoint.X, clickPoint.Y);
                 tempFood.Quantity = rndNum.Next(min, max); // takes user input for min and max value and picks random num between those values
                 list_food.Add(tempFood);
@@ -789,7 +785,6 @@ namespace Prototype_2
             {
                 double tempP = 0.2 * (alpha); // 0.2 * p Strength 
                 T[i] = Math.Pow(tempP, alpha) * Math.Pow(1.0 / Distance(antID, nestID, distances), beta);
-                // could be huge when pheromone[][] is big
                 if (T[i] < 0.0001)
                 {
                     T[i] = 0.0001;
