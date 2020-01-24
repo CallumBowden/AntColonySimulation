@@ -13,9 +13,6 @@ namespace Prototype_2
 {
     public partial class PrototypeACsim : Form
     {
-        // http://najim.co.uk/Ant-Colony-CSharp/ used as inspiration and a foundation for which prototype 1 is built
-        // 
-        //
         private Random random = new Random(0);
         private List<Ants> list_ants;
         private List<Food> list_food;
